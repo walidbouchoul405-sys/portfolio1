@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Walid Bouchoul - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background-color: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #0d6efd;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    section {
+      padding: 3rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #0d6efd;
+      margin-bottom: 1rem;
+    }
+    .services ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .services li {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+    .project {
+      background: white;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    input, textarea {
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #0d6efd;
+      color: white;
+      border: none;
+      padding: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #f1f1f1;
+    }
+    @media (max-width: 768px) {
+      .projects {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Walid Bouchoul</h1>
+    <p>Créateur de sites web & Designer Canva</p>
+  </header>
+
+  <section class="services">
+    <h2>Mes services</h2>
+    <ul>
+      <li>Création de site vitrine moderne et responsive</li>
+      <li>Designs professionnels sur Canva (logos, flyers, cartes de visite)</li>
+      <li>Conseils personnalisés pour améliorer votre visibilité</li>
+    </ul>
+  </section>
+
+  <section class="projects">
+    <h2>Mes réalisations</h2>
+    <div class="project">
+      <h3>Restaurant Le Délice</h3>
+      <p>Site vitrine avec menu et formulaire de réservation</p>
+    </div>
+    <div class="project">
+      <h3>AfroStyle Coiffure</h3>
+      <p>Site avec présentation des services et intégration Instagram</p>
+    </div>
+    <div class="project">
+      <h3>Portfolio Freelance</h3>
+      <p>Exemple de portfolio simple, clair et moderne</p>
+    </div>
+    <div class="project">
+      <h3>Événement associatif</h3>
+      <p>Page d'événement avec programme et formulaire d'inscription</p>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contactez-moi</h2>
+    <form action="mailto:walidbouchoul405@gmail.com" method="POST" enctype="text/plain">
+      <input type="text" name="name" placeholder="Votre nom" required>
+      <input type="email" name="email" placeholder="Votre email" required>
+      <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Walid Bouchoul. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
